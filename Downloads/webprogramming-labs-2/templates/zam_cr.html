@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block lab %}Лабораторная работа 4{% endblock %}
+
+{% block main %}
+<div>
+    <h1> Новая заметка </h1>
+    {{errors}}
+    <from>
+        <input type ="text" name ="title" placeholder="Название статьи">
+        <textarea name=" text_art" placeholder="Текст статьи" rows="20">
+
+        </textarea>
+
+        <input type="submit" value="Apply"/> 
+    </from>
+</div>
+{% endblock %}
