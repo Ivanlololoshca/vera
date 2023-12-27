@@ -62,14 +62,15 @@ def registerPage():
 
 def start_zaregist():
     if request.method == 'POST':
+        username = request.form.get('username')
         name = request.form.get('name')
         service = request.form.get('service')
         experience = request.form.get('experience')
         price = request.form.get('price')
+        numberc = request.form.get('numberc')
+        maillc = request.form.get('maillc')
         about = request.form.get('about')
-
-       
-        return render_template("zaregist.html", name=name, service=service, experience=experience, price=price, about=about)
+        return render_template("zaregist.html", name=name, service=service, experience=experience, price=price, about=about, username=username, numberc=numberc, maillc=maillc)
 
    
     return render_template("zaregist.html")
@@ -142,6 +143,10 @@ def start_15():
 def start_16():
     return render_template("16.html")
 
+
+@regist.route("/regist/triger")
+def start_triger():
+    return render_template("triger.html")
 
     
 

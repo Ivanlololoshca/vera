@@ -10,7 +10,10 @@
         <img src="{{ url_for('static', filename='l1.png') }}" width="500" height="60">
         <div class="button-container">
             <button id="mainMenuBtn" style="background-color: rgb(238, 240, 117);">в главное меню</button>
-            <button id="logoutBtn" style="background-color: rgb(238, 240, 117);">выйти</button>
+            <!-- Добавляем title для кнопки "выйти" -->
+            <button id="logoutBtn" style="background-color: rgb(238, 240, 117);" title="При нажатии на данную кнопку вы соглашаетесь с политикой конфиденциальности нашего сайта и вы не сможете зайти обратно в свой аккаунт">выйти</button>
+            <!-- Добавляем кнопку "выложить объявление" -->
+            <button id="postAdBtn" style="background-color: rgb(238, 240, 117);">выложить объявление</button>
         </div>
     </header>
 
@@ -39,6 +42,11 @@
 
         document.getElementById('logoutBtn').addEventListener('click', function() {
             window.location.href = '/menu';
+        });
+
+        // Добавляем обработчик для кнопки "выложить объявление"
+        document.getElementById('postAdBtn').addEventListener('click', function() {
+            window.location.href = '/regist/triger';
         });
     </script>
 </body>

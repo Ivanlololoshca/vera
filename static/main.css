@@ -29,7 +29,7 @@ footer {
 .advert6, .advert7, .advert8,
 .advert9, .advert10, .advert11,
 .advert12, .advert13, .advert14, 
-.advert15, .advert16 { 
+.advert15, .advert16, .advert-new { 
   display: inline-block;
   vertical-align: top;
   margin-right: 20px;
