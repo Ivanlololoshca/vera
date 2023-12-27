@@ -1,0 +1,137 @@
+html, body {
+  height: 100%;
+  background-color: #f0f8ff; /* Более светлый оттенок голубого */
+  margin: 0; /* Убираем внешние отступы */
+  font-family: 'Arial', sans-serif; /* Заменим шрифт на Arial или другой sans-serif шрифт */
+}
+
+header {
+  width: 100%;
+  height: 80px; /* Увеличим высоту шапки */
+  background-color: #5fb8f0; /* Более насыщенный цвет голубого */
+  padding: 20px 0; /* Прибавим верхний отступ, уберем нижний */
+}
+
+.button-container {
+  margin-right: 1%;
+  text-align: right;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #5fb8f0;
+}
+
+.advert1, .advert2, 
+.advert3, .advert4, .advert5,
+.advert6, .advert7, .advert8,
+.advert9, .advert10, .advert11,
+.advert12, .advert13, .advert14, 
+.advert15, .advert16 { 
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  border: 5px solid #dccb0b; /* Более насыщенный цвет желтого */
+  width: 300px;
+  text-align: center;
+  background-color: #7fffd4; /* Цвет мятной зелени */
+  margin: 20px;
+  position: static;
+  font-size: 14px; /* Увеличим размер шрифта */
+  padding: 10px; /* Добавим внутренний отступ */
+}
+
+.body1 {
+  font-family: Arial, sans-serif;
+  background-color: #55eba0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form1 {
+  background-color: aquamarine;
+  padding: 20px;
+  border: 5px solid rgb(220, 203, 11);
+  border-radius: 8px;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.h11 {
+  text-align: center;
+  color: #000;
+}
+
+.form1 label {
+  display: block;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.form1 input,
+.form1 select,
+.form1 textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.form1 button {
+  background-color: rgb(95, 184, 240);
+  color: #000;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form1 button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.form1 .error {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+.user-data-container{
+  align-items: center; /* Выравниваем элементы по центру вертикально */
+  margin-left: 530px;
+  margin-top: -500px;
+}
+
+.pipka{
+  flex-shrink: 0;
+  margin-right: 10px; 
+}
+
+.advert1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.read-more-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}

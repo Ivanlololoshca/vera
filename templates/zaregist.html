@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='l1.png') }}" width="500" height="60">
+        <div class="button-container">
+            <button id="mainMenuBtn" style="background-color: rgb(238, 240, 117);">в главное меню</button>
+            <button id="logoutBtn" style="background-color: rgb(238, 240, 117);">выйти</button>
+        </div>
+    </header>
+
+    <img src="{{ url_for('static', filename='pngwing.com.png') }}" width="500" height="500" alt="Изображение над текстом" class="pipka">
+
+    <div class="user-data-container">
+        <h2>Ваш аккаунт</h2>
+        <p>Логин: {{ username }}</p> 
+        <p>Имя: {{ request.form.get('name') }}</p>
+        <p>Выбранная услуга: {{ request.form.get('service') }}</p>
+        <p>Стаж: {{ request.form.get('experience') }}</p>
+        <p>Цена услуги: {{ request.form.get('price') }}</p>
+        <p>Контактный номер: {{ request.form.get('numberc') }}</p> 
+        <p>@maill: {{ request.form.get('maillc') }}</p>
+        <p>О себе: {{ request.form.get('about') }}</p>
+    </div>
+
+    <footer>
+        <img src="{{ url_for('static', filename='l1.png') }}" width="500" height="60">
+    </footer>
+
+    <script>
+        document.getElementById('mainMenuBtn').addEventListener('click', function() {
+            window.location.href = '/regist/glavmen';
+        });
+
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            window.location.href = '/menu';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='l1.png') }}" width="500" height="60">
+        <div class="button-container">
+            <button style="background-color: rgb(238, 240, 117);" onclick="redirectToMainMenu()">в главное меню</button>
+        </div>
+        <script>
+            function redirectToMainMenu() {
+                window.location.href = '/regist/glavmen';
+            }
+        </script>
+    </header>
+
+    <img src="{{ url_for('static', filename='Kirill_Gerstein_backstage.jpg') }}" width="500" height="500" alt="Изображение над текстом" class="pipka">
+
+    <div class="user-data-container">
+        <h1>
+            Привет! Меня зовут Кирилл, и я ищу работу уборщика.
+            Я готов взять на себя все обязанности
+                   связанные 
+                    с уборкой помещений, мойкой окон и санузлов,
+                    а также сбором мусора и поддержанием чистоты 
+                    в течение дня.У меня есть опыт работы в различных сферах,
+                    включая уборку офисных помещений, торговых центров и производственных
+                    объектов. Я обладаю высокой степенью ответственности и
+                    стремлюсь к выполнению задач на самом высоком уровне.
+                    Я ищу работу, которая будет соответствовать моим навыкам
+                    и опыту. Готов начать работу сразу же после получения 
+                    предложения. Буду рад обсудить детали сотрудничества
+                    с работодателем.
+        
+                
+       
+       </h1>
+       <h2>Позвонить +7 (123) 456-78-90 
+       Написать ilia@example.com
+       </h2>
+    </div>
+    <footer margin-top: auto; background-color: lightgray;>
+        <img src="{{ url_for('static', filename='l1.png') }}" width="500" height="60">
+    </footer>

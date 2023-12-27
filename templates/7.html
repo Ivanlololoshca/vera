@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='l1.png') }}" width="500" height="60">
+        <div class="button-container">
+            <button style="background-color: rgb(238, 240, 117);" onclick="redirectToMainMenu()">в главное меню</button>
+        </div>
+        <script>
+            function redirectToMainMenu() {
+                window.location.href = '/regist/glavmen';
+            }
+        </script>
+    </header>
+
+    <img src="{{ url_for('static', filename='6.jpg') }}" width="500" height="500" alt="Изображение над текстом" class="pipka">
+
+    <div class="user-data-container">
+        <h1>
+            Клим. Мне 30 лет. Ищу работу повара в хорошем ресторане или кафе.
+            Опыт работы более 5 лет. 
+                Могу вкусно и быстро приготовить 
+                самые разные блюда. Ответственный,
+                 аккуратный, соблюдаю все нормы и 
+                 стандарты. Есть санитарная книжка. 
+                 Рассмотрю предложения с обучением и 
+                 возможностью карьерного роста.
+       </h1>
+       <h2>
+        Позвонить +7 900 123-45-67 
+      Написать klim@example.com
+       </h2>
+    </div>
+    <footer margin-top: auto; background-color: lightgray;>
+        <img src="{{ url_for('static', filename='l1.png') }}" width="500" height="60">
+    </footer>

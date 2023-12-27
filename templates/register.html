@@ -1,0 +1,35 @@
+{% block lab %}{% endblock %}
+
+{% block main %}
+<form method="post">
+  <h1>Регистрация</h1>
+  <div>
+      <label for="username">Логин</label>
+      <input type="text" name="username" value="{{ username }}" placeholder="Введите логин">
+  </div>
+  <div>
+      <label for="password">Пароль</label>
+      <input type="text" name="password" value="{{ password }}" placeholder="Введите пароль">
+  </div>
+  
+<form method="post" action="/regist/osebe" onsubmit="redirectToRegister()">
+    
+    <button id="registerBn" type="submit">Зарегистрироваться</button>
+</form>
+
+<script>
+    function redirectToRegister() {
+        window.location.href = '/regist/osebe';
+        return false;  
+    }
+</script>
+
+  {% if errors %}
+      <ul class="error">
+          {% for error in errors %}
+              <li>{{ error }}</li>
+          {% endfor %}
+      </ul>
+  {% endif %}
+</form>
+{% endblock %}

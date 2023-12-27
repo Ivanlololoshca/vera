@@ -1,12 +1,7 @@
-from flask import Flask 
-app = Flask (__name__)
+from flask import Flask
+from regist import regist
+from menu import menu
 
-@app.route("/")
-@app.route("/index")
-def start():
-    return " " 
-
-@app.route("/menu")
-def menu():
-    return " "
-    
+app = Flask(__name__)
+app.register_blueprint(regist)
+app.register_blueprint(menu)

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body class="body1">
+    <form method="post" action="/regist/zaregist" class="form1" onsubmit="redirectToRegister()">
+        <h1 class="h11">Анкета</h1>
+        <div>
+            <label for="username">Логин</label>
+            <input type="text" name="username" placeholder="Введите ваш логин" required>
+        </div>
+        <div>
+            <label for="name">Имя</label>
+            <input type="text" name="name" placeholder="Введите ваше имя" required>
+        </div>
+        <div>
+            <label for="service">Выберите вид услуги</label>
+            <select name="service">
+                <option value="репетитор">Репетитор</option>
+                <option value="бухгалтер">Бухгалтер</option>
+                <option value="программист">Программист</option>
+                <option value="повар">Повар</option>
+                <option value="продавец">Продавец</option>
+                <option value="тренер">Тренер</option>
+                <option value="игрок">Игрок</option>
+                <option value="мазафакер">Мазафакер</option>
+                <option value="геймер">Геймер</option>
+                <option value="разнорабочий">Разнорабочий</option>
+            </select>
+        </div>
+        <div>
+            <label for="experience">Стаж</label>
+            <input type="number" name="experience" placeholder="Введите ваш стаж">
+        </div>
+        <div>
+            <label for="price">Цена услуги</label>
+            <input type="number" name="price" placeholder="Введите цену услуги">
+        </div>
+        <div>
+            <label for="about">контактный номер</label>
+            <input type="number" name="numberc" placeholder="Введите ваш контактный номер" required>
+        </div>
+        <div>
+            <label for="about">Ваш @maill</label>
+            <input type="text" name="maillc" placeholder="Введите ваш @maill" required>
+        </div>
+        <div>
+            <label for="about">О себе</label>
+            <textarea name="about" placeholder="Расскажите о себе"></textarea>
+        </div>
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>

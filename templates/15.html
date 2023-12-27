@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='l1.png') }}" width="500" height="60">
+        <div class="button-container">
+            <button style="background-color: rgb(238, 240, 117);" onclick="redirectToMainMenu()">в главное меню</button>
+        </div>
+        <script>
+            function redirectToMainMenu() {
+                window.location.href = '/regist/glavmen';
+            }
+        </script>
+    </header>
+
+    <img src="{{ url_for('static', filename='ma.jpg') }}" width="500" height="500" alt="Изображение над текстом" class="pipka">
+
+    <div class="user-data-container">
+        <h1>
+            Марк. Мне 26 лет. Ищу работу продавца, 
+            потому что я общительный, 
+            люблю помогать людям и работать с товарами
+            Имею опыт работы продавцом-консультантом в магазине электроники.
+       </h1>
+       <h2>
+        Позвонить 8934523423 
+      Написать mark@example.com 
+       </h2>
+    </div>
+    <footer margin-top: auto; background-color: lightgray;>
+        <img src="{{ url_for('static', filename='l1.png') }}" width="500" height="60">
+    </footer>
